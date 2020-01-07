@@ -1,12 +1,12 @@
 <template>
   <div class="carousel-wrapper">
-    <no-ssr>
+    <client-only>
       <agile :options="options">
         <div v-for="i in 5" :key="i" class="img-wrapper">
           <img :src="`https://picsum.photos/200/100?random=${i}`" />
         </div>
       </agile>
-    </no-ssr>
+    </client-only>
   </div>
 </template>
 
