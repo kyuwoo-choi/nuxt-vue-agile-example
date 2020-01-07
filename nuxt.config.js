@@ -23,11 +23,11 @@ export default {
   /*
    ** Global CSS
    */
-  css: [],
+  css: ['vue-agile/dist/VueAgile.css'],
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: [{ src: './plugins/vue-agile.js', mode: 'client' }],
   /*
    ** Nuxt.js dev-modules
    */
