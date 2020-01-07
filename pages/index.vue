@@ -13,7 +13,7 @@ export default {
 <style>
 .carousel-wrapper {
   padding: 40px;
-  height: 150px;
+  height: 180px;
 }
 .img-warpper img {
   margin: auto;
