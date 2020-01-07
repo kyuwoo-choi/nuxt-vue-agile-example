@@ -2,7 +2,7 @@
   <div class="carousel-wrapper">
     <no-ssr>
       <agile :options="options">
-        <div v-for="i in 5" :key="i" class="img-warpper">
+        <div v-for="i in 5" :key="i" class="img-wrapper">
           <img :src="`https://picsum.photos/200/100?random=${i}`" />
         </div>
       </agile>
@@ -30,11 +30,14 @@ export default {
   padding: 40px;
   height: 180px;
 }
-.img-warpper img {
-  margin: auto;
-  width: 200px;
-  height: 100px;
-  background-image: linear-gradient(gray 100%, transparent 0);
+.img-wrapper {
+  text-align: center;
+  img {
+    margin: auto;
+    width: 200px;
+    height: 100px;
+    background-image: linear-gradient(gray 100%, transparent 0);
+  }
 }
 .agile__actions {
   margin: 10px;
