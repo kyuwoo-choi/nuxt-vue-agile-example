@@ -3,7 +3,7 @@
     <client-only>
       <agile :options="options">
         <div v-for="i in 5" :key="i" class="img-wrapper">
-          <img :src="`https://picsum.photos/200/100?random=${i}`" />
+          <img :src="`./${i}-200x100.jpg`" />
         </div>
       </agile>
     </client-only>
